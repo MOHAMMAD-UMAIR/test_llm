@@ -47,7 +47,7 @@ def generate_response(input_text):
             {"role": "user", "content": f"Write the cover letter in 3 paragraphs and dont be too verbose. Use simple words. The job description is : {input_text}"}
         ]
         )
-    st.info(response)
+    st.info(response.choices[0].message.content)
     
     
 
