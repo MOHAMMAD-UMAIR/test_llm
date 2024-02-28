@@ -34,7 +34,7 @@ if uploaded_file is not None:
 
 
 def generate_response(input_text):
-    client = OpenAI( api_key=openai_api_key)
+    client = OpenAI( )
     # client = OpenAI(temperature=0.5, openai_api_key=openai_api_key)
     
     # llm = OpenAI(temperature=0.7, openai_api_key=openai_api_key)
