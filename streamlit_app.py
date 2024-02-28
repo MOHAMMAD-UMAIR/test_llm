@@ -2,8 +2,8 @@ import streamlit as st
 from openai  import OpenAI
 import os
 
-# Everything is accessible via the st.secrets dict:
-st.write("OPEN_API_KEY:", st.secrets["OPEN_API_KEY"])
+# # Everything is accessible via the st.secrets dict:
+# st.write("OPEN_API_KEY:", st.secrets["OPEN_API_KEY"])
 
 
 # And the root-level secrets are also accessible as environment variables:
