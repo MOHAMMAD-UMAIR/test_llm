@@ -3,13 +3,13 @@ from openai  import OpenAI
 import os
 
 # Everything is accessible via the st.secrets dict:
-# st.write("OPEN_API_KEY:", st.secrets["OPEN_API_KEY"])
+st.write("OPEN_API_KEY:", st.secrets["OPEN_API_KEY"])
 
 
 # And the root-level secrets are also accessible as environment variables:
 st.write(
     "Has environment variables been set:",
-    os.environ["OPEN_API_KEY"] == st.secrets["OPEN_API_KEY"],
+    os.environ["OPEN_API_KEY"] == st.secrets["OPEN_API_KEY"] 
 )
 
 
